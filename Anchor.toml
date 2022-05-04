@@ -1,0 +1,16 @@
+[features]
+seeds = false
+
+[programs.devnet]
+lil_introvert = "7HHAYoTw39hNTeJut54zKTm6gizw2fByz5gbNUcBt78c"
+extrovert = "47ai2PNBTrRW9R7cqCHkk9keEovYvDBsNV7Kyrf8vtpU"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
